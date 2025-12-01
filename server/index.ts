@@ -400,7 +400,7 @@ app.post('/api/admin/submissions/:id/reject', (req, res) => {
 });
 
 // Fallback: Serve React app for all non-API routes (SPA routing)
-app.get('*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
