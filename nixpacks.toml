@@ -1,0 +1,8 @@
+[phases.setup]
+nixpkgs = ["python3", "build-essential"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[phases.start]
+cmd = "npm run server"
