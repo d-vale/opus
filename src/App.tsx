@@ -36,7 +36,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleLogin = (email: string, password: string) => {
+  const handleLogin = (email: string, _password: string) => {
     // Simulation de connexion
     const newUser: User = {
       id: Math.random().toString(36).substr(2, 9),
@@ -48,7 +48,7 @@ function App() {
     localStorage.setItem('opus_user', JSON.stringify(newUser));
   };
 
-  const handleRegister = (name: string, email: string, password: string) => {
+  const handleRegister = (name: string, email: string, _password: string) => {
     // Simulation d'inscription
     const newUser: User = {
       id: Math.random().toString(36).substr(2, 9),
